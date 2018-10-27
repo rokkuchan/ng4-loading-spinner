@@ -54,13 +54,28 @@
     visibility: visible;
 }
 
-.lds-roller {
-    display: inline-block;
-    position: relative;
-    width: 64px;
-    height: 64px;
-    left: 48%;
-    top: 47%;
+@media(min-width:481px) { 
+    .lds-roller 
+    { 
+        display: inline-block; 
+        position: relative; 
+        width: 64px; 
+        height: 64px; 
+        left: 48%; 
+        top: 47%; 
+    }
+}  
+@media(max-width:480px) 
+{
+    .lds-roller
+    { 
+         display: inline-block; 
+         position: relative; 
+         width: 64px; 
+         height: 64px; 
+         left: 42%; 
+         top: 47%; 
+    }
 }
 
 .lds-roller div {
